@@ -247,19 +247,19 @@ class Game:
                 print("Ходит игрок!")
                 repeat = self.us.move()
             else:
-                print("-"*20)
+                print("-"*63)
                 print("Ходит компьютер!")
                 repeat = self.ai.move()
             if repeat:
                 num -= 1
 
             if self.ai.board.count == 7:
-                print("-"*20)
+                print("-"*63)
                 print("Игрок выиграл!")
                 break
 
             if self.us.board.count == 7:
-                print("-"*20)
+                print("-"*63)
                 print("Компьютер выиграл!")
                 break
             num += 1
